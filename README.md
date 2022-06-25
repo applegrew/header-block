@@ -1,5 +1,7 @@
 # Heading Tool
 
+<b>This fork adds `id` to `h` tags so that they can be anchored</b>
+
 ![Version of EditorJS that the plugin is compatible with](https://badgen.net/badge/Editor.js/v2.0/blue)
 
 Provides Headings Blocks for the [Editor.js](https://ifmo.su/editor).

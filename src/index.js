@@ -36,7 +36,8 @@ class Header {
    *   api - Editor.js API
    *   readOnly - read only mode flag
    */
-  constructor({ data, config, api, readOnly }) {
+  constructor({ data, config, api, readOnly, block }) {
+    this.block = block;
     this.api = api;
     this.readOnly = readOnly;
 
@@ -336,6 +337,7 @@ class Header {
      * Create element for current Block's level
      */
     const tag = document.createElement(this.currentLevel.tag);
+    tag.setAttribute('id', 'header-' + this.block.id);
 
     /**
      * Add text to block
